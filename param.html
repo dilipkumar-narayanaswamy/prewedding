@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./libs/mindar/mindar-image-three.prod.js"></script>
+
+    <style>
+      html, body {position: relative; margin: 0; width: 100%; height: 100%; overflow: hidden}
+    </style>
+  </head>
+  <body>
+  
+  <script>
+		const def_id="w7xz";
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		var  itemid =  urlParams.get('id') == null ? def_id : urlParams.get('id');
+		console.log('id='+itemid);
+		var map = new Map();
+		map.set("w7xz","./videos/test-tel1.mp4");
+		map.set("d6ky","./videos/test-tel2.mp4");
+		map.set("kotg","./videos/test-tel3.mp4"); //http://localhost:8887/param.html?id=kotg
+		map.set("7uop","./videos/test-tel4.mp4");
+		map.set("f700","./videos/test-tel5.mp4");
+		map.set("zace","./videos/test-tel6.mp4");
+		map.set("vgbm","./videos/test-tel7.mp4");
+		const paramVideoFile = map.get(itemid) == null? map.get(def_id) : map.get(itemid);
+		console.log("paramVideoFile:"+paramVideoFile);
+  /* 
+							w7xz
+							d6ky
+							kotg
+							7uop
+							f700
+							zace
+							vgbm
+							rtnf
+							ixm6
+							fgzp
+							y10a
+							eohq
+							8vcy
+							xn4a
+							xlk8
+							0jva
+							9rng
+							62gl
+							pazs
+							vprp
+  */
+		const paramProfileText = "<a href='tel:18008899999'>1800 889 9999</a>";
+		const paramWebText = "<a href='https://dilipkumar-narayanaswamy.github.io/prewedding/'>https://dilipkumar-narayanaswamy.github.io/prewedding/</a>";
+		const paramEmailText = "<a href='mailto:dilip.swamy@sharksplash.com'>dilip.swamy@sharksplash.com</a>";
+		const paraLocationText = "<a href='https://www.google.com/maps/place/Chennai,+Tamil+Nadu,+India'>Chennai,Tamil Nadu,India</a>"; //
+		const paramImageTargetMind = './img/InviteFront.mind';
+		//const paramVideoFile = './videos/businesswoman.mp4'; 
+		//const paramVideoFile = './videos/weddinggreenbg1.mp4';
+		const paramGLFTFile = './img/softmind/scene.gltf';
+		const paramBusinessCardImage = './img/InviteFrontClick.png';
+		const paramTopCenterImage = './img/InviteFrontClick.png';
+		const paramTopRightImage = './img/InviteFrontClick.png';
+		const paramTopLeftImage = './img/InviteFrontClick.png'
+	</script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
